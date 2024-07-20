@@ -1,0 +1,14 @@
+{% extends "template.html" %}
+
+{% block content %}
+<ul>
+    <li><a href="{{url_for('home')}}">HOME</a></li>
+    <li><a href="{{url_for('about')}}" target="_blank">ABOUT</a></li>
+    <li><a href="{{url_for('employees')}}" target="_blank">EMPLOYEES</a>
+        <ul>
+            <li><a href="{{url_for('managers')}}" target="_blank">Managers</a></li>
+            <li><a href="{{url_for('salespersons')}}" target="_blank">Sales Persons</a></li>
+        </ul>
+    </li>
+</ul>
+{% endblock content %}
