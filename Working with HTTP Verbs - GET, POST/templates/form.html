@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<form action="/submit" method="post">
+
+    <label for="name">Name : </label>
+    <input type="text" name="name" id="name"> <br><br>
+
+    <label for="sub1">Subject 1 : </label>
+    <input type="number" name="sub1" id="sub1"> <br><br>
+
+    <label for="sub2">Subject 2 : </label>
+    <input type="number" name="sub2" id="sub2"> <br><br>
+
+    <input type="submit" value="Check Results"> <br><br>
+
+</form>
+
+{% block res %}
+{% endblock res %}
+
+{% endblock content %}
+
